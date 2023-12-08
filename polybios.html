@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifrado de Polybios</title>
+  <link rel="stylesheet" href="js/estilo.css">
+  <script src="js/polybios.js"></script>
+</head>
+<body>
+  <div class="container">
+    <label for="mensaje">Mensaje:</label>
+    <input type="text" id="mensaje" placeholder="Ingresa tu mensaje">
+    <button onclick="cifrar()">Cifrar</button>
+    <br><br>
+    <label for="cifrado">Mensaje cifrado:</label>
+    <input type="text" id="cifrado" readonly>
+    <br><br><br><br>
+    <label for="mensajeDescifrar">Mensaje cifrado:</label>
+    <input type="text" id="mensajeDescifrar" placeholder="Ingresa el mensaje cifrado">
+    <button onclick="descifrar()">Descifrar</button>
+    <br><br>
+    <label for="descifrado">Mensaje descifrado:</label>
+    <input type="text" id="descifrado" readonly>
+  </div>
+</body>
+</html>
