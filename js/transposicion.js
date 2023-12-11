@@ -56,9 +56,6 @@ function processText() {
 function simpleTransposition(text, operation) {
     if (operation === "encrypt") {
         return Array.from(text).sort(() => Math.random() - 0.5).join('');
-    } else if (operation === "decrypt") {
-        // No hay una lógica específica para descifrar en este ejemplo
-        return "Descifrado no implementado para transposición simple";
     }
 }
 
@@ -98,9 +95,6 @@ function groupTransposition(text, key, operation) {
         }
     
         return encriptado.join('');
-    }else{
-        // No hay una lógica específica para descifrar en este ejemplo
-        return "Descifrado no implementado para transposición por grupo";
     }
     
 }
@@ -140,8 +134,5 @@ function columnTransposition(text, key, operation, language) {
 
         return letrassort.map(subitem => subitem.join('')).join('');
 
-    } else if (operation === "decrypt") {
-        // No hay una lógica específica para descifrar en este ejemplo
-        return "Descifrado no implementado para transposición de columna simple";
     }
 }
