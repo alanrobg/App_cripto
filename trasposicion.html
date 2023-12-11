@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado por Transposición</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cifrado por Transposición</h2>
+    
+    <label for="inputText">Texto:</label>
+    <textarea id="inputText" placeholder="Ingresa el texto"></textarea>
+    
+    <div id="key_container">
+        <label for="inputKey">Clave:</label>
+        <input type="text" id="inputKey" placeholder="Ingresa la clave">
+    </div>
+    
+    
+    <label for="operation">Operación:</label>
+    <select id="operation">
+        <option value="encrypt">Cifrar</option>
+    </select>
+    
+    <label for="cipherType">Tipo de Cifrado:</label>
+    <select id="cipherType" onchange="hideoptions()">
+        <option value="simple">Transposición Simple</option>
+        <option value="group">Transposición por Grupos</option>
+        <option value="column">Transposición de Columna Simple</option>
+    </select>
+
+    <div id="lang_container">
+        <label for="language">Lenguaje:</label>
+        <select id="language">
+            <option value="Español">Español</option>
+            <option value="Ingles">Ingles</option>
+        </select>
+    </div>
+    
+    <button onclick="processText()">Procesar</button>
+    
+    <label for="outputText">Resultado:</label>
+    <textarea id="outputText" readonly></textarea>
+
+    <script src="js/transposicion.js"></script>
+</body>
+</html>

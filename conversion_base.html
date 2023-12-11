@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado por Conversión de Base</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/conversion_base.js"></script>
+    <h2>Cifrado por Conversión de Base (Base64)</h2>
+    
+    <label for="inputText">Texto:</label>
+    <textarea id="inputText" placeholder="Ingresa el texto"></textarea>
+    
+    <label for="operation">Operación:</label>
+    <select id="operation">
+        <option value="encrypt">Cifrar</option>
+        <option value="decrypt">Descifrar</option>
+    </select>
+    
+    <button onclick="processText()">Procesar</button>
+    
+    <label for="outputText">Resultado:</label>
+    <textarea id="outputText" readonly></textarea>
+</body>
+</html>
