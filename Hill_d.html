@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>App web Criptografia</title>
-  <style>
-    textarea {
-      width: 100%;
-      height: 100px;
-    }
-  </style>
-  <script src="Hill_d.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Hill Cipher Decryption</title>
+    <style>
+        body {
+            padding-top: 56px; /* Adjusted padding to account for the fixed navbar */
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px; /* Added margin to separate text areas */
+        }
+
+        .container {
+            margin-top: 20px; /* Adjusted margin to provide space from the navbar */
+        }
+    </style>
+    <script src="Hill_d.js"></script>
 </head>
+
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="js/beaufortCifrado.js"></script>
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-          APP CRIPTO
-        </a>
-      </div>
+
+    <nav class="navbar bg-body-tertiary fixed-top"> <!-- Added 'fixed-top' class to make the navbar fixed -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/Logo.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                APP CRIPTO
+            </a>
+        </div>
     </nav>
 
-<h2>Hill Descifrado</h2>
+    <div class="container">
 
-<label for="ciphertext">Texto cifrado:</label>
-<textarea id="ciphertext"></textarea>
+        <h2>Hill Descifrado</h2>
 
-<label for="key">Clave (matriz 2x2):</label>
-<textarea id="key">3 3 2 5</textarea>
+        <label for="ciphertext">Texto cifrado:</label>
+        <textarea id="ciphertext"></textarea>
 
-<button onclick="decrypt()">Descifrar</button>
+        <label for="key">Clave (matriz 2x2):</label>
+        <textarea id="key">3 3 2 5</textarea>
 
-<label for="decryptedtext">Texto descifrado:</label>
-<textarea id="decryptedtext" readonly></textarea>
+        <button class="btn btn-primary" onclick="decrypt()">Descifrar</button>
+
+        <label for="decryptedtext">Texto descifrado:</label>
+        <textarea id="decryptedtext" readonly></textarea>
+
+    </div>
+
+</body>
+
+</html>
+
