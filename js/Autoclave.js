@@ -47,3 +47,17 @@ function descifrarAutoclave(textoCifrado, clave) {
 
   return resultado;
 }
+
+function cifrar() {
+  let textoOriginal = document.getElementById('textoOriginal').value;
+  let clave = document.getElementById('clave').value;
+  let resultado = cifrarAutoclave(textoOriginal, clave);
+  document.getElementById('resultado').innerText = resultado;
+}
+
+function descifrar() {
+  let textoCifrado = document.getElementById('resultado').value;
+  let clave = document.getElementById('clave').value;
+  let resultado = descifrarAutoclave(textoCifrado, clave);
+  document.getElementById('resultado').innerText = resultado;
+}
