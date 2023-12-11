@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hill Cipher</title>
+  <style>
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+  </style>
+  <script src="Hill_d.js"></script>
+</head>
+<body>
+
+<h2>Hill Cipher</h2>
+
+<label for="ciphertext">Texto cifrado:</label>
+<textarea id="ciphertext"></textarea>
+
+<label for="key">Clave (matriz 2x2):</label>
+<textarea id="key">3 3 2 5</textarea>
+
+<button onclick="decrypt()">Descifrar</button>
+
+<label for="decryptedtext">Texto descifrado:</label>
+<textarea id="decryptedtext" readonly></textarea>
